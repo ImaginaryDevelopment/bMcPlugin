@@ -39,6 +39,8 @@ public class bMcPlugin extends JavaPlugin {
 	}
 	public void onEnable(){
 		this.log=getLogger();
+		PluginManager pm = getServer().getPluginManager();
+		pm.registerEvents(this, this);
 		log.info("bMcPlugin has been enabled.");
 		myExecutor=new bMcPluginCommandExecutor(this);
 		getCommand("bMcPlugin").setExecutor(myExecutor);
