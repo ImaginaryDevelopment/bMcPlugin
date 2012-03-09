@@ -1,0 +1,9 @@
+name: bMcPlugin
+main: com.github.imaginarydevelopment.bMcPlugin.bMcPlugin
+version: 0.1
+commands:
+  bMcPlugin:
+    description: This is demo command.
+    usage: /bMcPlugin
+    permission: bMcPlugin.bMcPlugin
+    permission-message: You don't have 
